@@ -16,3 +16,4 @@ jobs:
     - name: Hello
       run: |
         echo "Hello hey World from self hosted runner!"
+        sleep 300s
