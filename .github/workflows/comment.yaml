@@ -5,7 +5,7 @@ on:
      -main
      -swathida-byte-patch/**
      -anudeep-pv-patch/**
-    types: [opened]
+    types: [created,opened]
   issue_comment:
     types: [recheck]
 
