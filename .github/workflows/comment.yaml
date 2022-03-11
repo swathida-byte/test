@@ -1,13 +1,9 @@
 name: Example 2
 on:
   pull_request:
-    branches:
-     -main
-     -swathida-byte-patch/**
-     -anudeep-pv-patch/**
-    types: [created,opened]
+    types: [opened]
   issue_comment:
-    types: [recheck]
+    types: [created]
 
 jobs:
   build:
@@ -16,6 +12,8 @@ jobs:
     steps:
     - name: oncomment
       uses: khan/pull-request-comment-trigger@master
-
+      id: recheck
+      with:
+          trigger: '@build'
     - run: 'echo Found it!'
       if: steps.check.outputs.triggered == 'true'
