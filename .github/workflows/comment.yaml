@@ -10,8 +10,8 @@ jobs:
     name: Build
     runs-on: self-hosted
     steps:
-    - name: oncomment
-      uses: khan/pull-request-comment-trigger@master
+    - name: Pull Request Comment Trigger
+      uses: Khan/pull-request-comment-trigger@1.0.0
       id: recheck
       with:
           trigger: '@build'
