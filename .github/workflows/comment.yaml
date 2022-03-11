@@ -1,0 +1,20 @@
+on:
+  pull_request:
+    branches:
+    -main
+    -swathida-byte-patch/**
+    -anudeep-pv-patch/**
+    types: [opened]
+  issue_comment:
+    types: [recheck]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: khan/pull-request-comment-trigger@master
+        id: check
+        with:
+          trigger: '@build'
+          
+      - run: 'echo Found it!'
+        if: steps.check.outputs.triggered == 'true'
