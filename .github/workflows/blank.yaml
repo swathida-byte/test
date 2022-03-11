@@ -8,7 +8,8 @@ on:
   pull_request_review_comment:
     branches:
      -main
-     -develop
+     -swathida-byte-patch/**
+     -anudeep-pv-patch/**
     types: [recheck]
 jobs:
   build:
