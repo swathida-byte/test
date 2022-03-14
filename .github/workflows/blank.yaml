@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: self-hosted/single-deployment
+    runs-on: self-hosted
     steps:
     - name: Checkout
       uses: actions/checkout@v2
