@@ -1,0 +1,31 @@
+---
+name: Example 3
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    name: BuildDocker1
+    runs-on: self-hosted
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    
+  build-2:
+    name: BuildDocker2
+    runs-on: self-hosted
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    
+  build-3:
+    name: BuildDocker3
+    runs-on: self-hosted
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    
+  
