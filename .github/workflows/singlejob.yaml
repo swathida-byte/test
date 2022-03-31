@@ -1,5 +1,5 @@
 ---
-name: singlejobs
+name: singlejob
 on:
   push:
     branches: [ main ]
