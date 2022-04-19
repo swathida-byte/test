@@ -1,0 +1,19 @@
+name: issuecomment
+on:
+  pull_request:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+jobs:
+  build:
+    name: Build
+    runs-on: self-hosted
+    steps:
+    - name: Pull Request Comment Trigger
+      uses: Khan/pull-request-comment-trigger@1.0.0
+      id: recheck
+      with:
+          trigger: '@build'
+    - run: 'echo Found it!'
+      if: steps.check.outputs.triggered == 'true'
