@@ -2,7 +2,7 @@ name: Reusable workflow example
 
 on:
   workflow_run:
-    branches: [ main ]
+
     
 
 jobs:
