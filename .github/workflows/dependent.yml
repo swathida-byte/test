@@ -9,7 +9,7 @@ jobs:
     name: switching
     runs-on: self-hosted
     steps:
-      - uses: Kitchen/.github/workflow-templates/dummy-ci.yml@v1
+      - uses: Kitchen/.github/workflow-templates/dummy-ci.yml@main
       - run: 'echo Found it!'
     
 
