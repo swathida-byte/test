@@ -1,26 +1,24 @@
 name: dependentjobs
 on:
-  workflow_run:
-    workflows: [Run Tests]
-    types:
-      - completed
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 jobs:
   build:
     runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v2
+      
 
       - name: Run a one-line script
         run: echo Hello from Octo Organization
   Tests:
     runs-on: self-hosted
+    needs: build
 
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Run a one-line script
-        run: echo Hello from Octo Organization
+      
   Run:
     runs-on: self-hosted
 
