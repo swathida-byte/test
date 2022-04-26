@@ -17,6 +17,11 @@ jobs:
   Tests:
     runs-on: self-hosted
     needs: build
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo Hello from Octo Organization
 
       
   Run:
