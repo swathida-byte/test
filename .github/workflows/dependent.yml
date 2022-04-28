@@ -1,0 +1,23 @@
+
+name: Call a reusable workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-worflow:
+    runs-on: self-hosted
+
+    steps:
+      - uses: Kitchen/.github/workflow-templates/dummy-ci.yml@main
+      
+
+  
+
+  
+
+
+    
+
