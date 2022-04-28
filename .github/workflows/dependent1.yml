@@ -11,9 +11,11 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    -  name: wor
-       uses: Kitchen/.github/workflow-templates/dummy-ci.yml@main
+    - name: wor
+      uses: Kitchen/.github/workflow-templates/dummy-ci.yml@main
       
+    - name: Checkout
+      uses: actions/checkout@v2
 
   
 
