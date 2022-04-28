@@ -16,7 +16,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Workflow
-      uses: actions/re.yml@v5
+      uses: re.yml@v5
       
 
   
