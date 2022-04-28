@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: wor
-      uses: Kitchen/.github/workflow-templates/dummy-ci.yml@main
+      uses: Kitchen/.github/workflow-templates/dependent.yml@main
       
     - name: Checkout
       uses: actions/checkout@v2
