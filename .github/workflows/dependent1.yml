@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: .github/workflow-templates/dummy-ci.yml@main
-        run: echo "hello"
+      
 
   
 
