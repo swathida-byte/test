@@ -16,7 +16,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Workflow
-      uses: Kitchen/.github/workflow-templates/dummy-ci.yml@main
+      uses: actions/re.yml@v5
       
 
   
