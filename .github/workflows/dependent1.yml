@@ -1,0 +1,23 @@
+
+name: workflow1
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-worflow:
+    runs-on: self-hosted
+
+    steps:
+      - uses: .github/workflow-templates/dummy-ci.yml@main
+        run: echo "hello"
+
+  
+
+  
+
+
+    
+
