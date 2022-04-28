@@ -11,7 +11,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - uses: .github/workflow-templates/dummy-ci.yml@main
+      - uses: Kitchen/.github/workflow-templates/dummy-ci.yml@main
       
 
   
