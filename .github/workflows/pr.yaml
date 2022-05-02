@@ -5,7 +5,7 @@ jobs:
     # This job only runs for pull request comments
     name: PR comment
     if: ${{ github.event.issue.pull_request }}
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: |
           echo A comment on PR $NUMBER
@@ -16,7 +16,7 @@ jobs:
     # This job only runs for issue comments
     name: Issue comment
     if: ${{ !github.event.issue.pull_request }}
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: |
           echo A comment on issue $NUMBER
