@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  call-worflow:
+  call-workflow:
     runs-on: self-hosted
 
     steps:
