@@ -11,3 +11,10 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: "echo Found it!"
+      
+  pr-commented-1:
+    name: PR commented-1
+    if: ${{ github.event.label.name == 'queued' }} 
+    runs-on: self-hosted
+    steps:
+      - run: "echo Found it
