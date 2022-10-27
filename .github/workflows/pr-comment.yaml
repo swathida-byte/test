@@ -17,4 +17,4 @@ jobs:
     if: ${{ github.event.label.name == 'queued' }} 
     runs-on: self-hosted
     steps:
-      - run: "echo Found it
+      - run: "echo Found it"
