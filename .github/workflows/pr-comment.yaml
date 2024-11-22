@@ -10,4 +10,4 @@ jobs:
     if: ${{ github.event.label.name == 'queued' }} || contains(github.event.comment.body, 're')
     runs-on: self-hosted
     steps:
-      - run: "echo Found it!"
+      - run: "echo Found it!
